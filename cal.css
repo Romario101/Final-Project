@@ -1,0 +1,74 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-image: url(christmas-dark.png);
+}
+.calculator
+{
+  margin-top:150px;
+  background-image:url('http://charitychoochoo.14four.com/assets/images/homepage_bg.jpg');
+  width:99%;
+  height:100%;
+  background-size:cover;
+  background-position:right bottom;
+  overflow:hidden;
+  position:absolute;
+}
+
+
+.BOMDAS
+{
+  background-color:green;
+  width:50px;
+  height:50px;
+  position:relative;
+}
+
+
+#calBody{
+  background-color: #3e3e3e;
+  padding: 2%;
+  position: absolute;
+  top: 50%;
+  margin: 0px auto 0px auto;
+    transform:translateY(-50%);
+   width: 312px;
+  height: 424px;
+}
+
+#display{
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  font-size: 2em;
+  font-style: 
+}
+
+#calculator{
+  width: 100%;
+  height: auto;
+}
+
+[type="button"]
+{
+  border: none;
+  width: 65px;
+  height: 65px;
+  margin: 0px 0px 10px 10px;
+}
+[type="reset"]
+{
+  color: red;
+  border: none;
+  width: 65px;
+  height: 65px;
+  margin: 0px 0px 10px 10px;
+}
+
+[type="button"]:hover
+{
+  background-color: #fff;
+}

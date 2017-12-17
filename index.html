@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<title>Calculator</title>
 	</head>
+	<link rel="stylesheet" type="text/css" href="cal.css">
+	<link rel="stylesheet" href="cal.css">
 	<body>
-		<form name = "calculator">
+		<div id="calBody" >
+		<form id="calculator" name = "calculator">
 				<input id = "display" type = "text" name="display">
 				<br>
 				<input type="reset" name="Clear" value = 'C' onclick= "calculator.display.value += '' ">
 				<input type="button" name="BOMDAS" value = '()' onclick = "calculator.display.value += '' ">
-				<input type="button" name="BOMDAS" value = " % " onclick= "calculator.display.value += '1/100 ">
+				<input type="button" name="BOMDAS" value = " % " onclick= "percentage()">
 				<input type="button" name="BOMDAS" value = 	&divide onclick = "calculator.display.value += '/' ">
 				<br>
 				<input type="button" name="calButton" value = "7" onclick = "calculator.display.value += '7' ">
@@ -27,15 +31,20 @@
 				<input type="button" name ="calButton" value = "3" onclick= "calculator.display.value += '3' ">
 				<input type="button" name="BOMDAS"  value = " + " onclick = "calculator.display.value += '+' ">
 				<br>
-				<input type="button" name="calButton" value = "0" onclick = "calculator.display.value += '0' ">
 				<input type="button" name="calButton" value = "." onclick = "calculator.display.value += '.' ">
+				<input type="button" name="calButton" value = "0" onclick = "calculator.display.value += '0' ">
 				<input type="button" name="BOMDAS" value = " = " onclick="calculator.display.value = eval(calculator.display.value)">	
 				<input type="button" name = "Backspace" value = &#8678 onclick="deleteval()">
 		</form>
+	</div>
 		<script type="text/javascript">
 			function deleteval(){
 				calculator.display.value = calculator.display.value.slice(0, -1);
 
+			}
+			function percentage(){
+
+				
 			}
 	
 		</script>
