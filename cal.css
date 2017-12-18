@@ -31,9 +31,9 @@ body{
 #calBody{
   background-color: #3e3e3e;
   padding: 2%;
-  position: absolute;
+  position: center;
   top: 50%;
-  margin: 0px auto 0px auto;
+  margin: 400px 750px 400px 750px;
     transform:translateY(-50%);
    width: 312px;
   height: 424px;
